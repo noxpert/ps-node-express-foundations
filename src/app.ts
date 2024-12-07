@@ -1,18 +1,11 @@
 import express, { Request, Response } from "express";
-import dotenv from "dotenv";
 
-const app = express();
+const server = express();
 
-dotenv.config(); //Reads .env file and makes it accessible via process.env
+function requestCallback(request: Request, response: Response) {
+  response.status(200).send('request success');
+}
 
-app.get("/greet", (req: Request, res: Response) => {
-  if (req.query.name) {
-    res.status(200).send(`Hello, ${req.query.name}`)
-  } else {
-    res.send("Hi!");
-  }
-});
+server.get("/", requestCallback);
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server is running at ${process.env.PORT}`);
-});
+server.listen(5050);

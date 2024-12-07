@@ -1,15 +1,10 @@
-# node-typescript-template
-Basic setup for a new dockerized node typescript project
+# ps-node-express-foundations
+Repository for exploring examples while going through PluralSight Node.js and Express Foundations course.
 
-### Background
-As I am learning some basics of node and TypeScript development, this is a starting point for a basic project. 
-
-Since I use JetBrains development tools, the .gitignore includes their recommended contents.
-
-This is based on https://dev.to/chandrapantachhetri/docker-postgres-node-typescript-setup-47db, but I removed the Postgres parts as I won't always want a database for some of my simple projects.
+This is based on https://github.com/noxpert/node-typescript-template
 
 ### Versions
-These versions are not neccessarily required, but are the version that I was using when I created this repository:
+These versions are not necessarily required, but are the version that I was using when I created this repository:
 - Node >= 18.8.0
 - docker compose >= 2.29.7
 
@@ -18,6 +13,10 @@ Install Docker desktop application.
 After checking out this repo, switch to above version(s).
 
 `nvm use 18`
+
+Install npm packages:
+
+`npm install`
 
 Run locally:
 
